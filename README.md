@@ -1,6 +1,30 @@
-# NodeGoat
+# NodeGoat - With vulnerable components
 
 Being lightweight, fast, and scalable, Node.js is becoming a widely adopted platform for developing web applications. This project provides an environment to learn how OWASP Top 10 security risks apply to web applications developed using Node.js and how to effectively address them.
+
+
+## Quickstart
+
+Here's some basic, opinionated instructions how to get NodeGoat running locally (check below for a full guide and more options): 
+
+* Run your own local version of MongoDB and make it listen on port `27017` without a password: 
+  ```bash
+  $ docker run --rm -p 27017:27017 mongo
+  ```
+* Install dependencies: 
+  ```bash 
+  $ npm install 
+  ```
+* Seed the DB with some initial data
+  ```bash 
+  $ npm run db:seed 
+  ```
+* Start the development server
+  ```bash 
+  $ npm start
+  ```
+* Navigate to http://localhost:4000 and log in using `user1` - `User1_123`
+* Check out the Memos feature for some vulnerable components 
 
 ## Getting Started
 OWASP Top 10 for Node.js web applications:
